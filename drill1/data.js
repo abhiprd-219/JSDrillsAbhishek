@@ -101,6 +101,8 @@ const arrayOfObjects = [
     }
   ];
 
+  module.exports = arrayOfObjects;
+
 
 
  
