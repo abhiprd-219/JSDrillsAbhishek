@@ -15,6 +15,10 @@ const inventory = require('./data');
   }
   
  findCarById(33);
+ findCarById();
+ findCarById(15);
+
+
   // Console output is :- Car 33 is a 2011 Jeep Wrangler.
   
   //Find last car details:-
@@ -22,7 +26,9 @@ const inventory = require('./data');
     const lastCar = inventory[inventory.length - 1];
     console.log(`Last car is a ${lastCar.car_make} ${lastCar.car_model}`);
   }
-  //findLastCar();
+  findLastCar();
+  findLastCar(12);
+
   
   
   // ==== Problem #3 ====
@@ -43,7 +49,8 @@ const inventory = require('./data');
   }
   
   // Execute the function
-  //sortCarModelsAlphabetically(inventory);
+  sortCarModelsAlphabetically(inventory);
+  sortCarModelsAlphabetically();
 
 
   
@@ -62,7 +69,8 @@ const inventory = require('./data');
   }
   
   // Execute the function
-  //getCarYears(inventory);
+  getCarYears(inventory);
+  getCarYears();
 
 
   
@@ -83,8 +91,10 @@ const inventory = require('./data');
     return count;
   
   }
-  //console.log(carsOlderThan2000());
-  
+  console.log(carsOlderThan2000());
+  carsOlderThan2000();
+
+
   // ==== Problem #6 ====
   // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Execute a function and return an array that only contains BMW and Audi cars.  Once you have the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
   function audiAndBMWOnly(){
@@ -99,5 +109,5 @@ const inventory = require('./data');
   }
   
   var filtersCar = audiAndBMWOnly();
- // console.log(JSON.stringify(filtersCar));
+ console.log(JSON.stringify(filtersCar));
   
